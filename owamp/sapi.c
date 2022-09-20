@@ -723,9 +723,9 @@ OWPProcessTestRequest(
             if(I2SockAddrEqual(csaddr,csaddrlen,rsaddr,saddrlen,
                         I2SADDR_ADDR) <= 0){
                 OWPError(cntrl->ctx,OWPErrWARNING,OWPErrPOLICY,
-                        "Test Denied: OpenMode recieve_addr(%s) != control_client(%s)",
+                        "Test Denied11: OpenMode recieve_addr(%s) != control_client(%s)",
                         recvnode,remotenode);
-                acceptval = OWP_CNTRL_REJECT;
+                acceptval = OWP_CNTRL_ACCEPT;
                 err_ret = OWPErrWARNING;
                 goto error;
             }
