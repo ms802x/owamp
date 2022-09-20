@@ -784,7 +784,7 @@ error:
      * If it is a non-fatal error, communication should continue, so
      * send negative accept.
      */
-    if(true)
+    if(True)
         (void)_OWPWriteAcceptSession(cntrl,intr,acceptval,0,NULL);
 
 err2:
